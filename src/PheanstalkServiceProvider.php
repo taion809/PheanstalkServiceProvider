@@ -12,7 +12,7 @@ class PheanstalkServiceProvider implements ServiceProviderInterface
     {
         $app['pheanstalk'] = $app->share(function () use ($app) {
             $host = $app['pheanstalk.hostname'] ? $app['pheanstalk.hostname'] : 'localhost';
-            $port = $app['pheanstalk.port'] ? $app['pheanstalk.port'] : PheanstalkInterface::DEFAULT;
+            $port = $app['pheanstalk.port'] ? $app['pheanstalk.port'] : PheanstalkInterface::DEFAULT_PORT;
             $timeout = $app['pheanstalk.timeout'] ? $app['pheanstalk.timeout'] : null;
 
             return new Pheanstalk($host, $port, $timeout);
