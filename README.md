@@ -11,7 +11,7 @@ Simple service provider for pheanstalk, hope you enjoy.
 
     $app = new Application();
     $app->register(new PheanstalkServiceProvider(), [
-        'pheanstalk.hostname' => 'localhost',s
+        'pheanstalk.hostname' => 'localhost',
         'pheanstalk.port' => 11300,
         'pheanstalk.timeout' => null,
     ]);
