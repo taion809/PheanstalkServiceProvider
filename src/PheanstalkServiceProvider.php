@@ -4,6 +4,7 @@ namespace PheanstalkServiceProvider;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 use Pheanstalk\Pheanstalk;
+use Pheanstalk\PheanstalkInterface;
 
 class PheanstalkServiceProvider implements ServiceProviderInterface
 {
