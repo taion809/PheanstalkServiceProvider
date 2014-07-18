@@ -19,5 +19,19 @@ Simple service provider for pheanstalk, hope you enjoy.
     $app->run();
 ```
 
+Or if you don't want to use this package at all...
+```php
+<?php
+    use Silex\Application;
+    use Pheanstalk\Pheanstalk;
+
+    $app = new Application();
+    $app['pheanstalk'] = $app->share(function() {
+        return new Pheanstalk('localhost', 11300, null);
+    });
+
+    $app->run();
+```
+
 ## License
 PheanstalkServiceProvider is licensed under the new bsd license, see LICENSE.md.
