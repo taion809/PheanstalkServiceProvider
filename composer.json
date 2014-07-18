@@ -1,0 +1,18 @@
+{
+  "name": "johnsn/pheanstalk-service-provider",
+  "description": "A Pheanstalk service provider for Silex",
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "Nicholas Johns",
+      "email": "nicholas@redstalker.com"
+    }
+  ],
+  "require": {
+    "silex/silex": "~1.2",
+    "pda/pheanstalk": "~3.0"
+  },
+  "psr-4": {
+    "PheanstalkServiceProvider\\": "src/"
+  }
+}
