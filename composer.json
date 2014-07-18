@@ -12,7 +12,9 @@
     "silex/silex": "~1.2",
     "pda/pheanstalk": "~3.0"
   },
-  "psr-4": {
-    "PheanstalkServiceProvider\\": "src/"
+  "autoload": {
+    "psr-4": {
+      "PheanstalkServiceProvider\\": "src/"
+    }
   }
 }
