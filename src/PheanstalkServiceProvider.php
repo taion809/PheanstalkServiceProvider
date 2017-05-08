@@ -3,6 +3,7 @@ namespace PheanstalkServiceProvider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
+use Silex\Application;
 use Pheanstalk\Pheanstalk;
 use Pheanstalk\PheanstalkInterface;
 
