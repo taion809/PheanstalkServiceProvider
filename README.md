@@ -26,9 +26,9 @@ Or if you don't want to use this package at all...
     use Pheanstalk\Pheanstalk;
 
     $app = new Application();
-    $app['pheanstalk'] = $app->share(function() {
+    $app['pheanstalk'] = function() {
         return new Pheanstalk('localhost', 11300, null);
-    });
+    };
 
     $app->run();
 ```
