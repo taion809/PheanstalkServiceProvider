@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "silex/silex": "~1.2",
+    "silex/silex": "~2.0",
     "pda/pheanstalk": "~3.0"
   },
   "autoload": {
